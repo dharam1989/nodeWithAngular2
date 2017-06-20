@@ -8,11 +8,12 @@ BEFORE YOU INSTALL: please read the prerequisites
 1. npm install -g @angular/cli
 2. run "npm install" in your root folder
 3. cd client
-4. run "npm install" in your clinet folder
-
+4. run "npm install" in your client folder
+5. run "ng build" in your client folder
+6. cd ..
 This project was generated with github (https://github.com/dharam1989/nodeWithAngular2.git) version 1.0.0
 
 ## Development server
-Run `npm run dev` for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
+Run `npm run dev` from your root for a dev server. Navigate to `http://localhost:8080/`. The app will automatically reload if you change any of the source files.
 
 
