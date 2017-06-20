@@ -1,0 +1,36 @@
+{
+  "name": "noc",
+  "version": "1.0.0",
+  "description": "This is an application for NOC \u001b[D\u001b[D\u001b[D\u001b[C\u001b[C team that will help them to track on alerts from diffirent services as like cloulwatch, newrellic etc",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js --exec babel-node --presets es2015,stage-2",
+    "dev": "nodemon server.js --exec babel-node --presets es2015,stage-2",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.63.0",
+    "body-parser": "^1.4.3",
+    "express": "^4.13.4",
+    "method-override": "^2.1.3",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.1.1",
+    "node-datetime": "^1.0.1",
+    "requestify": "^0.2.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "bcrypt-nodejs": "0.0.3",
+    "concurrently": "^3.4.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express-session": "^1.13.0",
+    "grunt": "^1.0.1",
+    "grunt-nodemon": "^0.4.2",
+    "nodemon": "^1.11.0"
+  },
+  "author": "Dharmendra",
+  "license": "MIT"
+}
