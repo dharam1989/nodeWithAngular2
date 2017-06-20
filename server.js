@@ -12,8 +12,8 @@ import mongoose from 'mongoose';// mongoose for mongodb
 const apiRoutes = require('./app/api/routes');
 const servicesRoutes = require('./app/services/routes');
 
-import db from './app/config/database';
-db.connect();     // connect to mongoDB database on modulus.io
+//import db from './app/config/database';
+//db.connect();     // connect to mongoDB database on modulus.io
 
 app.use(express.static(__dirname + '/client/dist'));// set the static files location /public/img will be /img for users
 app.use(morgan('dev'));      
