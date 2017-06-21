@@ -15,7 +15,7 @@ const servicesRoutes = require('./app/services/routes');
 //import db from './app/config/database';
 //db.connect();     // connect to mongoDB database on modulus.io
 
-app.use(express.static(__dirname + '/client/dist'));// set the static files location /public/img will be /img for users
+app.use(express.static(__dirname + '/dist'));// set the static files location /public/img will be /img for users
 app.use(morgan('dev'));      
 app.use(function(req, res, next) {
 res.header('Access-Control-Allow-Origin', '*');
@@ -37,7 +37,7 @@ app.use('/services', servicesRoutes);
 // application -------------------------------------------------------------
 app.get('*', function(req, res) {
 //res.sendFile(__dirname + '/public/index.html'); // load the single view file
-res.sendFile(path.join(__dirname, 'client/dist/index.html'));
+res.sendFile(path.join(__dirname, '/dist/index.html'));
 });
 
 // listen (start app with node server.js) ======================================
